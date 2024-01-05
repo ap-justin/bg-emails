@@ -13,8 +13,7 @@ export const Template = () => (
   <Container>
     <Body className="bg-white">
       <Text className="block text-lg">
-        {templates.accountSummary} is{" "}
-        <span className="text-green">rejected</span>.
+        {templates.accountSummary} is rejected
       </Text>
       <Text className="text-red-700">Reason: {templates.rejectionReason}</Text>
     </Body>

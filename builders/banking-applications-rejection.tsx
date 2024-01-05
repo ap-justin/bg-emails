@@ -5,7 +5,7 @@ import {
 } from "../src/templates/banking-applications-rejection";
 import { CreateTemplateRequest } from "@aws-sdk/client-ses";
 
-const json: CreateTemplateRequest = {
+const template: CreateTemplateRequest = {
   Template: {
     TemplateName: name,
     SubjectPart: "Better giving: changes in banking details",
@@ -13,7 +13,4 @@ const json: CreateTemplateRequest = {
   },
 };
 
-await Bun.write(
-  `./json-templates/${name}.json`,
-  JSON.stringify({ Template: json })
-);
+await Bun.write(`./json-templates/${name}.json`, JSON.stringify(template));

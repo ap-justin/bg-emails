@@ -9,6 +9,6 @@ const template: ITemplate = {
 };
 
 await Bun.write(
-  `./json-templates/${template.TemplateName}`,
+  `./json-templates/${template.TemplateName}.json`,
   JSON.stringify(template)
 );

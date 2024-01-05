@@ -1,6 +1,14 @@
-import * as React from "react";
 import { render } from "jsx-email";
-import { Template } from "../templates/banking-applications-approval";
+import { Template as BankingApplicationsApproval } from "../src/templates/banking-applications-approval";
+import { Template as ITemplate } from "@aws-sdk/client-ses";
 
-const html = await render(<Template />);
-console.log(html);
+const template: ITemplate = {
+  TemplateName: "banking-applications-approval",
+  SubjectPart: "Better giving: changes in banking details",
+  HtmlPart: await render(<BankingApplicationsApproval />),
+};
+
+await Bun.write(
+  `./json-templates/${template.TemplateName}`,
+  JSON.stringify(template)
+);

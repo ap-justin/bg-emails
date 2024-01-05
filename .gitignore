@@ -12,6 +12,3 @@ yarn-error.log*
 .pnpm-debug.log*
 
 
-# yarn 
-.yarn/*
-!.yarn/releases

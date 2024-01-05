@@ -1,8 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
+    "noEmit": true,
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "lib": ["ES2023"],
@@ -20,5 +19,5 @@
     "target": "ESNext"
   },
   "exclude": ["**/dist", "**/node_modules"],
-  "include": ["templates"]
+  "include": ["src", "scripts"]
 }

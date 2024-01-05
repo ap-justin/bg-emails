@@ -1,5 +1,5 @@
 import { Body, Preview } from "jsx-email";
-import Container from "./components/container";
+import Container from "../components/container";
 
 export const Template = () => (
   <Container>

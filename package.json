@@ -4,12 +4,13 @@
   "private": true,
   "description": "Better giving emails",
   "scripts": {
-    "dev": "email preview ./templates"
+    "dev": "email preview ./src/templates"
   },
   "dependencies": {
     "jsx-email": "^1.0.1"
   },
   "devDependencies": {
+    "@aws-sdk/client-ses": "3.485.0",
     "@types/bun": "^1.0.0",
     "@types/react": "^18.2.0",
     "react": "^18.2.0",

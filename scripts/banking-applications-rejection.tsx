@@ -11,4 +11,7 @@ const json: ITemplate = {
   HtmlPart: await render(<Template />),
 };
 
-await Bun.write(`./json-templates/${name}.json`, JSON.stringify(json));
+await Bun.write(
+  `./json-templates/${name}.json`,
+  JSON.stringify({ Template: json })
+);

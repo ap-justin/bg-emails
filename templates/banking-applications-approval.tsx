@@ -1,14 +1,14 @@
-import { Body, Head, Html, Preview } from "jsx-email";
+import { Body, Preview } from "jsx-email";
+import Container from "./components/container";
 
 export const Template = () => (
-  <Html>
-    <Head />
+  <Container>
     <Preview>
       This is our email {"{{email}}"} text for {"{{name}}"} &lt;{"{{email}}"}
       &gt;
     </Preview>
-    <Body>
+    <Body className="bg-white">
       This is our email {"{{email}}"} text for {"{{name}}"} &lt;{"{{email}}"}
     </Body>
-  </Html>
+  </Container>
 );

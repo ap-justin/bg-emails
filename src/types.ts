@@ -1,4 +1,11 @@
 export namespace BankingApplications {
+  export type New = {
+    name: "banking-applications-new";
+    data: {
+      accountSummary: string;
+    };
+  };
+
   export type Approval = {
     name: "banking-applications-approval";
     data: {

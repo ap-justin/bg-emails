@@ -13,6 +13,13 @@ export namespace BankingApplications {
       rejectionReason: string;
     };
   };
+
+  export type Default = {
+    name: "banking-applications-default";
+    data: {
+      accountSummary: string;
+    };
+  };
 }
 
 export type Templates<T extends Record<string, string>> = {

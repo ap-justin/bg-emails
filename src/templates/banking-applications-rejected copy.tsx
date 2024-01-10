@@ -1,10 +1,10 @@
 import { BankingApplication } from "../components/banking-applications";
 import { BankingApplications, ITemplate } from "../types";
 
-const name: BankingApplications.Name = "banking-applications-default";
+const name: BankingApplications.Name = "banking-applications-rejection";
 
 export const Template = () => (
-  <BankingApplication name={name} action="default" />
+  <BankingApplication name={name} action="rejected" />
 );
 
 export const template: ITemplate = {

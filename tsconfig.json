@@ -19,5 +19,5 @@
     "target": "ESNext"
   },
   "exclude": ["**/dist", "**/node_modules"],
-  "include": ["src", "builders"]
+  "include": ["src", "./build.tsx"]
 }

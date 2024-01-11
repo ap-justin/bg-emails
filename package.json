@@ -4,7 +4,8 @@
   "private": true,
   "description": "Better giving emails",
   "scripts": {
-    "dev": "email preview ./src/templates"
+    "dev": "email preview ./src/templates",
+    "build": "bun ./build.tsx"
   },
   "dependencies": {
     "jsx-email": "^1.0.1"
